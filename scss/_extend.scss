@@ -1,0 +1,82 @@
+@use 'variables' as *;
+%h1{
+  margin: 0;
+  font-size: 60px;
+  font-weight: 800;
+  color: $f-blue;
+  //media query
+  @media(max-width: $media-md) {
+    font-size: 42px;
+  }
+  @media(max-width: $media-sm) {
+    font-size: 36px;
+  }
+  @media(max-width: $media-mb-m) {
+    font-size: 30px;
+  }
+}
+%h2{
+  margin: 0;
+  font-size: 36px;
+  font-weight: 700;
+  color: $f-blue;
+  //media query
+  @media(max-width: $media-md) {
+    font-size: 30px;
+  }
+  @media(max-width: $media-sm) {
+    font-size: 26px;
+  }
+  @media(max-width: $media-mb-m) {
+    font-size: 24px;
+  }
+}
+%h3{
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+  color: $f-blue;
+  //media query
+  @media(max-width: $media-md) {
+    font-size: 22px;
+  }
+  @media(max-width: $media-mb-m) {
+    font-size: 18px;
+  }
+}
+%h4{
+  margin: 0;
+  font-size: 22px;
+  font-weight: 600;
+  color: $f-blue;
+  //media query
+  @media(max-width: $media-md) {
+    font-size: 20px;
+  }
+  @media(max-width: $media-mb-m) {
+    font-size: 18px;
+  }
+}
+%p{
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+  color: $gray !important;
+  line-height: 1.6;
+  //media query
+  @media(max-width: $media-sm) {
+    font-size: 14px;
+  }
+}
+%btn{
+  font-weight: 500;
+  background: $btn;
+  color: $light !important;
+  padding: 10px 15px !important;
+  transition: all 0.3s ease-in-out;
+  //media query
+
+  &:hover, &:active{
+    background: $btn-d;
+  }
+}

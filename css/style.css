@@ -1,0 +1,601 @@
+.hero-section .content h1 {
+  margin: 0;
+  font-size: 60px;
+  font-weight: 800;
+  color: #071c4d;
+}
+@media (max-width: 991px) {
+  .hero-section .content h1 {
+    font-size: 42px;
+  }
+}
+@media (max-width: 767px) {
+  .hero-section .content h1 {
+    font-size: 36px;
+  }
+}
+@media (max-width: 424px) {
+  .hero-section .content h1 {
+    font-size: 30px;
+  }
+}
+
+.about-section .content h2, .feature-section .content h2, .process-section .content h2, .pricing-section .content h2, .pricing-section .prices .row .pricing-card h2, .testimonial-section .content h2, .team-section .content h2 {
+  margin: 0;
+  font-size: 36px;
+  font-weight: 700;
+  color: #071c4d;
+}
+@media (max-width: 991px) {
+  .about-section .content h2, .feature-section .content h2, .process-section .content h2, .pricing-section .content h2, .pricing-section .prices .row .pricing-card h2, .testimonial-section .content h2, .team-section .content h2 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .about-section .content h2, .feature-section .content h2, .process-section .content h2, .pricing-section .content h2, .pricing-section .prices .row .pricing-card h2, .testimonial-section .content h2, .team-section .content h2 {
+    font-size: 26px;
+  }
+}
+@media (max-width: 424px) {
+  .about-section .content h2, .feature-section .content h2, .process-section .content h2, .pricing-section .content h2, .pricing-section .prices .row .pricing-card h2, .testimonial-section .content h2, .team-section .content h2 {
+    font-size: 24px;
+  }
+}
+
+.feature-section .features .feature h3, .feature-section .feature-blog .f-blog .txt h3, .process-section .process-content li .step .txt h3 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+  color: #071c4d;
+}
+@media (max-width: 991px) {
+  .feature-section .features .feature h3, .feature-section .feature-blog .f-blog .txt h3, .process-section .process-content li .step .txt h3 {
+    font-size: 22px;
+  }
+}
+@media (max-width: 424px) {
+  .feature-section .features .feature h3, .feature-section .feature-blog .f-blog .txt h3, .process-section .process-content li .step .txt h3 {
+    font-size: 18px;
+  }
+}
+
+.process-section .content h4, .testimonial-section .swiper .swiper-slide .review .client .info h4, .team-section .member h4, footer .u-link h4, footer .service h4 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 600;
+  color: #071c4d;
+}
+@media (max-width: 991px) {
+  .process-section .content h4, .testimonial-section .swiper .swiper-slide .review .client .info h4, .team-section .member h4, footer .u-link h4, footer .service h4 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 424px) {
+  .process-section .content h4, .testimonial-section .swiper .swiper-slide .review .client .info h4, .team-section .member h4, footer .u-link h4, footer .service h4 {
+    font-size: 18px;
+  }
+}
+
+header .offcanvas .offcanvas-body ul a, .hero-section .content p, .about-section .content p, .feature-section .content p, .feature-section .features .feature p, .feature-section .feature-blog .f-blog .txt p, .process-section .content p, .process-section .process-content li .step .txt p, .pricing-section .content p, .pricing-section .feature .box h4, .pricing-section .prices .row .pricing-card h2 span, .pricing-section .prices .row .pricing-card ul li span, .testimonial-section .content p, .testimonial-section .swiper .swiper-slide .review .txt p, .testimonial-section .swiper .swiper-slide .review .client .info span, .team-section .content p, .team-section .member span, footer .social-links p, footer .u-link a, footer .service a, footer .copy-txt p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+  color: #2e2e2e !important;
+  line-height: 1.6;
+}
+@media (max-width: 767px) {
+  header .offcanvas .offcanvas-body ul a, .hero-section .content p, .about-section .content p, .feature-section .content p, .feature-section .features .feature p, .feature-section .feature-blog .f-blog .txt p, .process-section .content p, .process-section .process-content li .step .txt p, .pricing-section .content p, .pricing-section .feature .box h4, .pricing-section .prices .row .pricing-card h2 span, .pricing-section .prices .row .pricing-card ul li span, .testimonial-section .content p, .testimonial-section .swiper .swiper-slide .review .txt p, .testimonial-section .swiper .swiper-slide .review .client .info span, .team-section .content p, .team-section .member span, footer .social-links p, footer .u-link a, footer .service a, footer .copy-txt p {
+    font-size: 14px;
+  }
+}
+
+.hero-section .content .btn {
+  font-weight: 500;
+  background: #175cff;
+  color: #fafafa !important;
+  padding: 10px 15px !important;
+  transition: all 0.3s ease-in-out;
+}
+.hero-section .content .btn:hover, .hero-section .content .btn:active {
+  background: #0048f0;
+}
+
+body {
+  background: #ffffff;
+  font-family: "Manrope", "Arial", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*header css*/
+header .bg-light {
+  box-shadow: 1px 1px 8px 1px #d3d2d2;
+}
+header .navbar-toggler:focus {
+  box-shadow: none;
+}
+header .offcanvas .btn-close:focus {
+  box-shadow: none;
+}
+header .offcanvas .offcanvas-body ul a {
+  font-weight: 600;
+}
+
+/*hero-section css*/
+.hero-section {
+  padding: 80px 0;
+}
+.hero-section .content {
+  margin-right: 30px;
+}
+.hero-section .content p {
+  padding: 15px 0;
+}
+.hero-section .img {
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .hero-section .img {
+    margin-top: 25px;
+  }
+}
+/*about section css*/
+.about-section {
+  padding: 60px 0;
+}
+.about-section .content .icon1 {
+  background: #175cff;
+  display: inline-block;
+  padding: 12px 18px;
+  border-radius: 10px;
+  text-align: center;
+}
+.about-section .content .icon1 i {
+  color: #fafafa;
+  font-size: 24px;
+}
+.about-section .content h2 {
+  padding: 15px 0;
+}
+.about-section .content p {
+  padding-bottom: 15px;
+}
+.about-section .content .link {
+  color: #175cff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+}
+.about-section .content .link:hover i {
+  transform: translateX(10px);
+}
+.about-section .content .link i {
+  color: #175cff;
+  margin-left: 10px;
+  vertical-align: middle;
+  transition: all 0.3s ease-in-out;
+  transform: translateX(0);
+}
+.about-section .content .icon2 {
+  background: #1b2342;
+  display: inline-block;
+  padding: 12px 18px;
+  border-radius: 10px;
+  text-align: center;
+}
+.about-section .content .icon2 i {
+  color: #fafafa;
+  font-size: 24px;
+}
+.about-section .img {
+  padding: 25px;
+}
+/*feature section css*/
+.feature-section {
+  padding: 60px 0;
+}
+.feature-section .content {
+  text-align: center;
+}
+.feature-section .content p {
+  padding: 15px 0;
+}
+.feature-section .features {
+  padding: 50px 0;
+}
+.feature-section .features .feature {
+  text-align: center;
+}
+.feature-section .features .feature i {
+  font-size: 24px;
+  color: #fafafa;
+  vertical-align: middle;
+}
+.feature-section .features .feature i::before {
+  padding: 15px;
+  border-radius: 10px;
+}
+.feature-section .features .feature h3 {
+  padding: 15px 0;
+}
+.feature-section .features .feature .blue::before {
+  background: #175cff;
+}
+.feature-section .features .feature .green::before {
+  background: #3cb690;
+}
+.feature-section .features .feature .red::before {
+  background: #f25767;
+}
+.feature-section .feature-blog {
+  margin-top: 60px;
+}
+.feature-section .feature-blog .bg-blue {
+  background: #CEDDFF;
+}
+.feature-section .feature-blog .bg-red {
+  background: #FCDDE1;
+}
+.feature-section .feature-blog .f-blog {
+  align-items: center;
+  padding: 20px 25px;
+  border-radius: 15px;
+}
+.feature-section .feature-blog .f-blog .txt p {
+  padding: 20px 0;
+}
+.feature-section .feature-blog .f-blog .txt .btn {
+  border: 2px solid #175cff;
+  color: #175cff !important;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+}
+.feature-section .feature-blog .f-blog .txt .btn:hover {
+  background-color: #175cff;
+  color: #fafafa !important;
+}
+/*process section css*/
+.process-section {
+  padding: 60px 0;
+}
+.process-section .content {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.process-section .content h4 {
+  color: #175cff;
+}
+.process-section .content h2 {
+  padding: 1rem 0;
+}
+.process-section .process-content li:not(:last-child) {
+  margin-bottom: 20px;
+}
+.process-section .process-content li .step .icon i {
+  font-size: 24px;
+  color: #1b2342;
+  vertical-align: middle;
+}
+@media (max-width: 991px) {
+  .process-section .process-content li .step .icon i {
+    font-size: 18px;
+  }
+}
+.process-section .process-content li .step .icon i::before {
+  padding: 15px;
+  border: 1px solid #1b2342;
+  border-radius: 10px;
+}
+@media (max-width: 991px) {
+  .process-section .process-content li .step .icon i::before {
+    padding: 10px;
+  }
+}
+.process-section .process-content li .step .txt {
+  margin-left: 25px;
+}
+.process-section .process-content li .step .txt span {
+  font-size: 16px;
+  font-weight: 500;
+  color: #176EFF;
+}
+.process-section .process-content li .step .txt h3 {
+  padding: 10px 0;
+}
+/*pricing-section css*/
+.pricing-section {
+  padding: 60px 0;
+}
+.pricing-section .content {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.pricing-section .content span {
+  font-size: 16px;
+  font-weight: 500;
+  color: #176EFF;
+}
+.pricing-section .content h2 {
+  padding: 15px 0;
+}
+.pricing-section .feature {
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .pricing-section .feature {
+    display: none;
+  }
+}
+.pricing-section .feature .box {
+  text-align: center;
+}
+.pricing-section .feature .box i {
+  font-size: 22px;
+  vertical-align: middle;
+}
+@media (max-width: 991px) {
+  .pricing-section .feature .box i {
+    font-size: 16px;
+  }
+}
+.pricing-section .feature .box i::before {
+  padding: 15px;
+  border-radius: 50%;
+}
+@media (max-width: 991px) {
+  .pricing-section .feature .box i::before {
+    padding: 10px;
+  }
+}
+.pricing-section .feature .box .blue {
+  color: #175cff;
+}
+.pricing-section .feature .box .blue::before {
+  background: #CEDDFF;
+}
+.pricing-section .feature .box .green {
+  color: #3cb690;
+}
+.pricing-section .feature .box .green::before {
+  background: #DEF4ED;
+}
+.pricing-section .feature .box .red {
+  color: #f25767;
+}
+.pricing-section .feature .box .red::before {
+  background: #FCDDE1;
+}
+.pricing-section .feature .box h4 {
+  font-weight: 600;
+  color: #071c4d !important;
+  display: inline-block;
+  margin-left: 10px;
+}
+.pricing-section .prices {
+  margin-top: 30px;
+  position: relative;
+}
+@media (max-width: 991px) {
+  .pricing-section .prices .row {
+    justify-content: center;
+  }
+}
+.pricing-section .prices .row .pricing-card {
+  border: 1px solid #CEDDFF;
+  padding: 25px 40px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px 0 #d2d2f580;
+}
+.pricing-section .prices .row .pricing-card span {
+  font-size: 16px;
+  font-weight: 600;
+  color: #176EFF;
+}
+.pricing-section .prices .row .pricing-card h2 {
+  padding: 20px 0;
+}
+.pricing-section .prices .row .pricing-card h2 span {
+  font-weight: 500;
+}
+.pricing-section .prices .row .pricing-card ul li {
+  list-style: none;
+}
+.pricing-section .prices .row .pricing-card ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+.pricing-section .prices .row .pricing-card ul li i {
+  color: #466EFF;
+}
+.pricing-section .prices .row .pricing-card ul li span {
+  margin-left: 8px;
+}
+.pricing-section .prices .row .pricing-card .button {
+  margin-top: 25px;
+  text-align: center;
+}
+.pricing-section .prices .row .pricing-card .button .btn {
+  border: 2px solid #175cff;
+  color: #175cff !important;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+}
+.pricing-section .prices .row .pricing-card .button .btn:hover {
+  background-color: #175cff;
+  color: #fafafa !important;
+}
+
+/*testimonial section css*/
+.testimonial-section {
+  padding: 60px 0;
+}
+.testimonial-section .content {
+  text-align: center;
+}
+.testimonial-section .content span {
+  font-size: 16px;
+  font-weight: 600;
+  color: #176EFF;
+}
+.testimonial-section .content h2 {
+  padding: 15px 0;
+}
+.testimonial-section .swiper {
+  padding: 40px 0;
+}
+.testimonial-section .swiper .swiper-slide {
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 5px 20px 0 #d2d2f580;
+  border-radius: 15px;
+}
+.testimonial-section .swiper .swiper-slide .review {
+  text-align: center;
+  padding: 20px;
+  background: #e0e0e0;
+  border-radius: 15px;
+}
+.testimonial-section .swiper .swiper-slide .review .client .img img {
+  width: 40%;
+}
+.testimonial-section .swiper .swiper-slide .review .client .info h4 {
+  padding: 10px 0;
+}
+/*team section css*/
+.team-section {
+  padding: 60px 0;
+}
+.team-section .content {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.team-section .content span {
+  font-size: 16px;
+  font-weight: 500;
+  color: #176EFF;
+}
+.team-section .content h2 {
+  padding: 15px 0;
+}
+.team-section .member {
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+.team-section .member:hover img {
+  transform: scale(1.15);
+}
+.team-section .member:hover ul {
+  transform: translateX(-55px);
+}
+.team-section .member .img {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px 0 #d2d2f580;
+}
+.team-section .member .img img {
+  transition: all 1s ease-in-out;
+}
+.team-section .member h4 {
+  padding: 10px 0;
+}
+.team-section .member ul {
+  position: absolute;
+  top: 20%;
+  left: 100%;
+  transition: all 1s ease-in-out;
+  transform: translateX(0);
+}
+.team-section .member ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+.team-section .member ul i {
+  font-size: 16px;
+  color: #175cff;
+}
+.team-section .member ul i:hover {
+  color: #fafafa;
+}
+.team-section .member ul i:hover::before {
+  background: #175cff;
+}
+.team-section .member ul i::before {
+  padding: 10px;
+  border-radius: 8px;
+  background: #fafafa;
+}
+
+/*footer css*/
+footer {
+  padding: 40px 0;
+  background: #1b2342;
+}
+@media (max-width: 767px) {
+  footer .social-links {
+    text-align: center;
+    padding-bottom: 15px;
+  }
+}
+footer .social-links p {
+  color: #fafafa !important;
+  padding: 10px 0;
+}
+@media (max-width: 767px) {
+  footer .social-links .nav {
+    justify-content: center;
+  }
+}
+footer .social-links .nav li:not(:last-child) {
+  margin-right: 10px;
+}
+footer .social-links .nav i {
+  color: #fafafa;
+  font-size: 18px;
+}
+footer .u-link li:not(:last-child), footer .service li:not(:last-child) {
+  margin-bottom: 5px;
+}
+footer .u-link a, footer .service a {
+  color: #fafafa !important;
+  text-decoration: none;
+}
+footer .u-link a:hover, footer .service a:hover {
+  opacity: 0.6;
+}
+footer .u-link h4, footer .service h4 {
+  color: #fafafa !important;
+}
+footer .copy-txt {
+  margin-top: 50px;
+  text-align: center;
+}
+footer .copy-txt p {
+  color: #fafafa !important;
+}
+
+/*scroll to  top css*/
+.scrollToTopBtn {
+  background-color: #f25767;
+  border-radius: 50%;
+  border: none;
+  color: #fafafa;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 48px;
+  width: 48px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all 0.3s ease;
+}
+
+.showBtn {
+  opacity: 1;
+  transform: translateY(0);
+}/*# sourceMappingURL=style.css.map */
