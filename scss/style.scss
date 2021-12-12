@@ -1,19 +1,8 @@
-// body {
-//   // background-image: #99a0ff;
-//   // background-image: radial-gradient(
-//   //     at 57% 8%,
-//   //     hsla(229, 86%, 71%, 1) 0,
-//   //     transparent 58%
-//   //   ),
-//   //   radial-gradient(at 78% 94%, hsla(147, 62%, 72%, 1) 0, transparent 41%),
-//   //   radial-gradient(at 42% 16%, rgb(135, 225, 228) 0, transparent 53%),
-//   //   radial-gradient(at 92% 24%, rgb(106, 163, 238) 0, transparent 43%),
-//   //   radial-gradient(at 93% 18%, rgb(124, 180, 254) 0, transparent 46%);
-// }
+
 @use 'variables' as *;
 @use 'extend' as *;
 body{
-  background: #ffffff;
+  background: #eeecec;
   font-family: 'Manrope', 'Arial', sans-serif;
 }
 *{
@@ -21,32 +10,51 @@ body{
   padding: 0;
 }
 /*header css*/
+.sticky{
+  background: rgb(238, 238, 238);
+  box-shadow: 0px 0px 7px 0.75px #959494;}
 header{
-  .bg-light{
-    box-shadow: 1px 1px 8px 1px #d3d2d2;
-  }
-  .navbar-brand{
-    img{}
-  }
-  .navbar-toggler{
-    &:focus{
-      box-shadow: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: 0.6s;
+  z-index: 10000;
+  .navbar{
+    position: relative;
+    background: transparent;
+    transition: 0.6s;
+    .navbar-brand{
+      img{}
     }
-    span{}
-  }
-  .offcanvas{
-    .btn-close{
+    .navbar-toggler{
       &:focus{
         box-shadow: none;
       }
+      span{}
     }
-    .offcanvas-body{
-      ul{
-        li{
+    .offcanvas-end{
+      @media(max-width: $media-mb-m){
+        width: 250px;
+      }
+    }
+    .offcanvas{
+      .btn-close{
+        &:focus{
+          box-shadow: none;
         }
-        a{
-          @extend%p;
-          font-weight: 600;
+      }
+      .offcanvas-body{
+        ul{
+          li{
+          }
+          a{
+            @extend%p;
+            font-weight: 600;
+            &:hover{
+              color: $btn !important;
+            }
+          }
         }
       }
     }
@@ -56,15 +64,15 @@ header{
 
 /*hero-section css*/
 .hero-section{
-  padding: 80px 0;
+  padding: 6.25rem 0;
   .content{
-    margin-right: 30px;
+    margin-right: 1.875rem;
     h1{
       @extend%h1;
     }
     p{
       @extend%p;
-      padding: 15px 0;
+      padding: .9375rem 0;
     }
     .btn{
       @extend%btn;
@@ -74,7 +82,7 @@ header{
     text-align: center;
     //media query
     @media(max-width: $media-sm){
-      margin-top: 25px;
+      margin-top: 1.5625rem;
     }
     img{}
     }
@@ -82,12 +90,12 @@ header{
 
 /*about section css*/
 .about-section{
-  padding: 60px 0;
+  padding: 3.75rem 0;
   .content{
     .icon1{
       background: $btn;
       display: inline-block;
-      padding: 12px 18px;
+      padding: .75rem 1.125rem;
       border-radius: 10px;
       text-align: center;
       i{
@@ -97,11 +105,11 @@ header{
     }
     h2{
       @extend%h2;
-      padding: 15px 0;
+      padding: .9375rem 0;
     }
     p{
       @extend%p;
-      padding-bottom: 15px;
+      padding-bottom: .9375rem;
     }
     .link{
       color: $btn;
@@ -114,8 +122,9 @@ header{
         }
       }
       i{
+        display: inline-block;
         color: $btn;
-        margin-left: 10px;
+        margin-left: .625rem;
         vertical-align: middle;
         transition: all 0.3s ease-in-out;
         transform: translateX(0);
@@ -124,7 +133,7 @@ header{
     .icon2{
       background: $blue;
       display: inline-block;
-      padding: 12px 18px;
+      padding: .75rem 1.125rem;
       border-radius: 10px;
       text-align: center;
       i{
@@ -134,14 +143,14 @@ header{
     }
   }
   .img{
-    padding: 25px;
+    padding: 1.5625rem;
     img{}
   }
 }
 
 /*feature section css*/
 .feature-section{
-  padding: 60px 0;
+  padding: 3.75rem 0;
   .content{
     text-align: center;
     h2{
@@ -149,25 +158,27 @@ header{
     }
     p{
       @extend%p;
-      padding: 15px 0;
+      padding: 1rem 0;
+      @extend%margin;
     }
   }
   .features{
-    padding: 50px 0;
+    padding: 3.125rem 0;
     .feature{
       text-align: center;
+      margin: 1.25rem;
       i{
-        font-size: 24px;
+        font-size: 1.5rem;
         color: $light;
         vertical-align: middle;
         &::before{
-          padding: 15px;
+          padding: .9375rem;
           border-radius: 10px;
         }
       }
       h3{
         @extend%h3;
-        padding: 15px 0;
+        padding: .9375rem 0;
       }
       p{
         @extend%p;
@@ -190,7 +201,11 @@ header{
     }
   }
   .feature-blog{
-    margin-top: 60px;
+    margin-top: 3.75rem;
+    //media query
+    @media(max-width: $media-sm){
+      margin: 0;
+    }
     .bg-blue{
       background: $bg-blue;
     }
@@ -201,13 +216,17 @@ header{
       align-items: center;
       padding: 20px 25px;
       border-radius: 15px;
+      //media query
+      @media(max-width: $media-mb-m){
+        margin: 1rem;
+      }
       .txt{
         h3{
           @extend%h3;
         }
         p{
           @extend%p;
-          padding: 20px 0;
+          padding: 1.25rem 0;
         }
         .btn{
           border: 2px solid $btn;
@@ -228,10 +247,10 @@ header{
 
 /*process section css*/
 .process-section{
-  padding: 60px 0;
+  padding: 3.75rem 0;
   .content{
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 2.5rem;
     h4{
       @extend%h4;
       color: $btn;
@@ -242,6 +261,7 @@ header{
     }
     p{
       @extend%p;
+      @extend%margin;
     }
   }
   .img{
@@ -250,42 +270,42 @@ header{
   .process-content{
     li{
       &:not(:last-child){
-        margin-bottom: 20px;
+        margin-bottom: 1.25rem;
       }
       .step{
         .icon{
           i{
-            font-size:24px;
+            font-size: 1.5rem;
             color: $blue;
             vertical-align: middle;
 
             //media query
             @media(max-width: $media-md){
-              font-size: 18px;
+              font-size: 1.125rem;
             }
 
             &::before{
-              padding: 15px;
+              padding: .9375rem;
               border: 1px solid $blue;
-              border-radius: 10px;
+              border-radius: .625rem;
               
               //media query
               @media(max-width: $media-md){
-                padding: 10px;
+                padding: .625rem;
               }
             }
           }
         }
         .txt{
-          margin-left: 25px;
+          margin-left: 1.5625rem;
           span{
-            font-size: 16px;
+            font-size: 1rem;
             font-weight: 500;
             color: #176EFF;
           }
           h3{
             @extend%h3;
-            padding: 10px 0;
+            padding: .625rem 0;
           }
           p{
             @extend%p;
@@ -298,21 +318,22 @@ header{
 
 /*pricing-section css*/
 .pricing-section{
-  padding: 60px 0;
+  padding: 3.75rem 0;
   .content{
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 1.875rem;
     span{
-      font-size: 16px;
+      font-size: 1rem;
       font-weight: 500;
       color: #176EFF;
     }
     h2{
       @extend%h2;
-      padding: 15px 0;
+      padding: 1rem 0;
     }
     p{
       @extend%p;
+      @extend%margin;
     }
   }
   .feature{
@@ -324,19 +345,19 @@ header{
     .box{
       text-align: center;
         i{
-          font-size: 22px;
+          font-size: 1.375rem;
           vertical-align: middle;
           //media query
           @media(max-width:$media-md){
-            font-size: 16px;
+            font-size: 1rem;
           }
           &::before{
-            padding: 15px;
+            padding: 1rem;
             border-radius: 50%;
 
             //media query
             @media(max-width:$media-md){
-              padding: 10px;
+              padding: .625rem;
             }
           }
         }
@@ -363,12 +384,12 @@ header{
         font-weight: 600;
         color: $f-blue !important;
         display: inline-block;
-        margin-left: 10px;
+        margin-left: .625rem;
       }
     }
   }
   .prices{
-    margin-top: 30px;
+    margin-top: 1.875rem;
     position: relative;
     .row{
       //media query
@@ -378,17 +399,17 @@ header{
 
       .pricing-card{
         border: 1px solid $bg-blue;
-        padding: 25px 40px;
+        padding: 1.5625rem 2.5rem;
         border-radius: 15px;
         box-shadow: $shadow;
         span{
-          font-size: 16px;
+          font-size: 1rem;
           font-weight: 600;
           color: #176EFF;
         }
         h2{
           @extend%h2;
-          padding: 20px 0;
+          padding: 1.25rem 0;
           span{
             @extend%p;
             font-weight: 500;
@@ -398,19 +419,19 @@ header{
           li{
             list-style: none;
             &:not(:last-child){
-              margin-bottom: 10px;
+              margin-bottom: .625rem;
             }
             i{
               color: $i-blue;
             }
             span{
               @extend%p;
-              margin-left: 8px;
+              margin-left: .5rem;
             }
           }
         }
         .button{
-          margin-top: 25px;
+          margin-top: 1.5625rem;
           text-align: center;
           .btn{
             border: 2px solid $btn;
@@ -430,34 +451,39 @@ header{
 
 /*testimonial section css*/
 .testimonial-section{
-  padding: 60px 0;
+  padding: 3.75rem 0;
   .content{
     text-align: center;
     span{
-      font-size: 16px;
+      font-size: 1rem;
       font-weight: 600;
       color: #176EFF;
     }
     h2{
       @extend%h2;
-      padding: 15px 0;
+      padding: 1rem 0;
     }
     p{
       @extend%p;
+      @extend%margin;
     }
   }
   .swiper{
-    padding: 40px 0;
+    padding: 2.5rem 0;
+    //media query
+    @media(max-width: $media-sm){
+      margin: 1.25rem;
+    }
     .swiper-slide{
       justify-content: center;
       align-items: center;
       box-shadow: $shadow;
-      border-radius: 15px;
+      border-radius: .9375rem;
       .review{
         text-align: center;
-        padding: 20px;
+        padding: 1.25rem;
         background: #e0e0e0;
-        border-radius: 15px;
+        border-radius: .9375rem;
         .txt{
           p{
             @extend%p;
@@ -466,13 +492,13 @@ header{
         .client{
           .img{
             img{
-              width: 40%;
+              width: 30%;
             }
           }
           .info{
             h4{
               @extend%h4;
-              padding: 10px 0;
+              padding: .625rem 0;
             }
             span{
               @extend%p;
@@ -488,97 +514,105 @@ header{
 
 /*team section css*/
 .team-section{
-  padding: 60px 0;
+  padding: 3.75rem 0;
   .content{
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 1.875rem;
     span{
-      font-size: 16px;
+      font-size: 1rem;
       font-weight: 500;
       color: #176EFF;
     }
     h2{
       @extend%h2;
-      padding: 15px 0;
+      padding: 1rem 0;
     }
     p{
       @extend%p;
+      @extend%margin;
     }
   }
   .member{
     text-align: center;
     cursor: pointer;
-    position: relative;
-    overflow: hidden;
-    &:hover{
-      img{
-        transform: scale(1.15);
-      }
-      ul{
-        transform: translateX(-55px);
-      }
+    //overflow: hidden;
+    //media query
+    @media(max-width: $media-mb-m){
     }
     .img{
-      border-radius: 10px;
+      position: relative;
+      border-radius: .625rem;
       overflow: hidden;
       box-shadow: $shadow;
+      &:hover{
+        img{
+          transform: scale(1.15);
+        }
+        ul{
+          transform: translateY(-45px);
+        }
+      }
       img{
         transition: all 1s ease-in-out;
+      }
+      ul{
+        position: absolute;
+        top: 100%;
+        left: 20%;
+        transform: translateY(0);
+        transition: all 1s ease-in-out;
+        //media query@media(max-width: $media-mb-m){}
+        li{
+          &:not(:last-child){
+            margin-right: .3125rem;
+          }
+        }
+        i{
+          font-size: 1rem;
+          color: $btn;
+          &:hover{
+            color: $light;
+            &::before{
+              background: $btn;
+            }
+          }
+          &::before{
+            padding: .5rem;
+            border-radius: .5rem;
+            background: $light;
+            @media(max-width: $media-sm){
+              display: none;
+            } 
+          }
+        }
       }
     }
     h4{
       @extend%h4;
-      padding: 10px 0;
+      padding: .625rem 0;
     }
     span{
       @extend%p;
-    }
-    ul{
-      position: absolute;
-      top: 20%;
-      left: 100%;
-      transition: all 1s ease-in-out;
-      transform: translateX(0);
-      li{
-        &:not(:last-child){
-          margin-bottom: 10px;
-        }
-      }
-      i{
-        font-size: 16px;
-        color: $btn;
-        &:hover{
-          color: $light;
-          &::before{
-            background: $btn;
-          }
-        }
-        &::before{
-          padding: 10px;
-          border-radius: 8px;
-          background: $light;
-        }
-      }
     }
   }
 }
 
 /*footer css*/
 footer{
-  padding: 40px 0;
+  padding: 2.5rem 0;
   background: $blue;
   .social-links{
     //media query
     @media(max-width:$media-sm){
        text-align: center;
-       padding-bottom: 15px;
+       padding-bottom: 1rem;
       }
 
     img{}
     p{
       @extend%p;
       color: $light !important;
-      padding: 10px 0;
+      padding: .625rem 0;
     }
     .nav{
       //media query
@@ -587,19 +621,19 @@ footer{
           }
       li{
         &:not(:last-child){
-          margin-right: 10px;
+          margin-right: 1rem;
         }
       }
       i{
         color: $light;
-        font-size: 18px;
+        font-size: 1.125rem;
       }
     }
   }
   .u-link, .service{
     li{
       &:not(:last-child){
-        margin-bottom: 5px;
+        margin-bottom: .3125rem;
       }
     }
     a{
@@ -617,7 +651,7 @@ footer{
   }
 
   .copy-txt{
-    margin-top: 50px;
+    margin-top: 3.125rem;
     text-align: center;
     p{
       @extend%p;
@@ -628,30 +662,34 @@ footer{
 
 /*scroll to  top css*/
 .scrollToTopBtn {
-  background-color: $red;
+  background-color: $btn;
   border-radius: 50%;
   border: none;
   color: $light;
   cursor: pointer;
-  font-size: 18px;
   line-height: 48px;
   width: 48px;
+  height: 48px;
   position: fixed;
   bottom: 20px;
-  right: 20px;
+  right: 25px;
   z-index: 100;
   opacity: 0;
   transform: translateY(100px);
   transition: all 0.3s ease;
+  /*media query*/
+  @media(max-width: $media-mb-m){
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    transform: translateY(56px);
+  }
 }
 
 .showBtn {
   opacity: 1;
   transform: translateY(0);
 }
-
-
-
 
 
 

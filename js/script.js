@@ -1,3 +1,4 @@
+
 //swiper js
 var swiper = new Swiper('.swiper', {
   spaceBetween: 30,
@@ -5,7 +6,7 @@ var swiper = new Swiper('.swiper', {
   centeredSlides: true,
   loop: true,
   autoplay: {
-  delay: 1500,
+  delay: 2500,
   disableOnInteraction: false,
   },
   breakpoints: {
@@ -49,3 +50,9 @@ function scrollToTop() {
 }
 scrollToTopBtn.addEventListener("click", scrollToTop);
 document.addEventListener("scroll", handleScroll);
+
+//scroll sticky top navbar
+window.addEventListener("scroll", function(){
+  var header = document.querySelector("header");
+  header.classList.toggle("sticky", window.scrollY > 0 ); 
+})

@@ -76,7 +76,7 @@
   }
 }
 
-header .offcanvas .offcanvas-body ul a, .hero-section .content p, .about-section .content p, .feature-section .content p, .feature-section .features .feature p, .feature-section .feature-blog .f-blog .txt p, .process-section .content p, .process-section .process-content li .step .txt p, .pricing-section .content p, .pricing-section .feature .box h4, .pricing-section .prices .row .pricing-card h2 span, .pricing-section .prices .row .pricing-card ul li span, .testimonial-section .content p, .testimonial-section .swiper .swiper-slide .review .txt p, .testimonial-section .swiper .swiper-slide .review .client .info span, .team-section .content p, .team-section .member span, footer .social-links p, footer .u-link a, footer .service a, footer .copy-txt p {
+header .navbar .offcanvas .offcanvas-body ul a, .hero-section .content p, .about-section .content p, .feature-section .content p, .feature-section .features .feature p, .feature-section .feature-blog .f-blog .txt p, .process-section .content p, .process-section .process-content li .step .txt p, .pricing-section .content p, .pricing-section .feature .box h4, .pricing-section .prices .row .pricing-card h2 span, .pricing-section .prices .row .pricing-card ul li span, .testimonial-section .content p, .testimonial-section .swiper .swiper-slide .review .txt p, .testimonial-section .swiper .swiper-slide .review .client .info span, .team-section .content p, .team-section .member span, footer .social-links p, footer .u-link a, footer .service a, footer .copy-txt p {
   margin: 0;
   font-size: 16px;
   font-weight: 400;
@@ -84,24 +84,44 @@ header .offcanvas .offcanvas-body ul a, .hero-section .content p, .about-section
   line-height: 1.6;
 }
 @media (max-width: 767px) {
-  header .offcanvas .offcanvas-body ul a, .hero-section .content p, .about-section .content p, .feature-section .content p, .feature-section .features .feature p, .feature-section .feature-blog .f-blog .txt p, .process-section .content p, .process-section .process-content li .step .txt p, .pricing-section .content p, .pricing-section .feature .box h4, .pricing-section .prices .row .pricing-card h2 span, .pricing-section .prices .row .pricing-card ul li span, .testimonial-section .content p, .testimonial-section .swiper .swiper-slide .review .txt p, .testimonial-section .swiper .swiper-slide .review .client .info span, .team-section .content p, .team-section .member span, footer .social-links p, footer .u-link a, footer .service a, footer .copy-txt p {
-    font-size: 14px;
+  header .navbar .offcanvas .offcanvas-body ul a, .hero-section .content p, .about-section .content p, .feature-section .content p, .feature-section .features .feature p, .feature-section .feature-blog .f-blog .txt p, .process-section .content p, .process-section .process-content li .step .txt p, .pricing-section .content p, .pricing-section .feature .box h4, .pricing-section .prices .row .pricing-card h2 span, .pricing-section .prices .row .pricing-card ul li span, .testimonial-section .content p, .testimonial-section .swiper .swiper-slide .review .txt p, .testimonial-section .swiper .swiper-slide .review .client .info span, .team-section .content p, .team-section .member span, footer .social-links p, footer .u-link a, footer .service a, footer .copy-txt p {
+    font-size: 0.875rem;
   }
 }
 
 .hero-section .content .btn {
+  font-size: 1.125rem;
   font-weight: 500;
   background: #175cff;
   color: #fafafa !important;
-  padding: 10px 15px !important;
+  padding: 1rem !important;
   transition: all 0.3s ease-in-out;
+}
+@media (max-width: 767px) {
+  .hero-section .content .btn {
+    font-size: 0.875rem;
+  }
 }
 .hero-section .content .btn:hover, .hero-section .content .btn:active {
   background: #0048f0;
 }
 
+.feature-section .content p, .process-section .content p, .pricing-section .content p, .testimonial-section .content p, .team-section .content p {
+  margin: 0 200px;
+}
+@media (max-width: 991px) {
+  .feature-section .content p, .process-section .content p, .pricing-section .content p, .testimonial-section .content p, .team-section .content p {
+    margin: 0 100px;
+  }
+}
+@media (max-width: 767px) {
+  .feature-section .content p, .process-section .content p, .pricing-section .content p, .testimonial-section .content p, .team-section .content p {
+    margin: 0;
+  }
+}
+
 body {
-  background: #ffffff;
+  background: #eeecec;
   font-family: "Manrope", "Arial", sans-serif;
 }
 
@@ -111,45 +131,68 @@ body {
 }
 
 /*header css*/
-header .bg-light {
-  box-shadow: 1px 1px 8px 1px #d3d2d2;
+.sticky {
+  background: #eeeeee;
+  box-shadow: 0px 0px 7px 0.75px #959494;
 }
-header .navbar-toggler:focus {
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: 0.6s;
+  z-index: 10000;
+}
+header .navbar {
+  position: relative;
+  background: transparent;
+  transition: 0.6s;
+}
+header .navbar .navbar-toggler:focus {
   box-shadow: none;
 }
-header .offcanvas .btn-close:focus {
+@media (max-width: 424px) {
+  header .navbar .offcanvas-end {
+    width: 250px;
+  }
+}
+header .navbar .offcanvas .btn-close:focus {
   box-shadow: none;
 }
-header .offcanvas .offcanvas-body ul a {
+header .navbar .offcanvas .offcanvas-body ul a {
   font-weight: 600;
+}
+header .navbar .offcanvas .offcanvas-body ul a:hover {
+  color: #175cff !important;
 }
 
 /*hero-section css*/
 .hero-section {
-  padding: 80px 0;
+  padding: 6.25rem 0;
 }
 .hero-section .content {
-  margin-right: 30px;
+  margin-right: 1.875rem;
 }
 .hero-section .content p {
-  padding: 15px 0;
+  padding: 0.9375rem 0;
 }
 .hero-section .img {
   text-align: center;
 }
 @media (max-width: 767px) {
   .hero-section .img {
-    margin-top: 25px;
+    margin-top: 1.5625rem;
   }
 }
 /*about section css*/
 .about-section {
-  padding: 60px 0;
+  padding: 3.75rem 0;
 }
 .about-section .content .icon1 {
   background: #175cff;
   display: inline-block;
-  padding: 12px 18px;
+  padding: 0.75rem 1.125rem;
   border-radius: 10px;
   text-align: center;
 }
@@ -158,10 +201,10 @@ header .offcanvas .offcanvas-body ul a {
   font-size: 24px;
 }
 .about-section .content h2 {
-  padding: 15px 0;
+  padding: 0.9375rem 0;
 }
 .about-section .content p {
-  padding-bottom: 15px;
+  padding-bottom: 0.9375rem;
 }
 .about-section .content .link {
   color: #175cff;
@@ -173,8 +216,9 @@ header .offcanvas .offcanvas-body ul a {
   transform: translateX(10px);
 }
 .about-section .content .link i {
+  display: inline-block;
   color: #175cff;
-  margin-left: 10px;
+  margin-left: 0.625rem;
   vertical-align: middle;
   transition: all 0.3s ease-in-out;
   transform: translateX(0);
@@ -182,7 +226,7 @@ header .offcanvas .offcanvas-body ul a {
 .about-section .content .icon2 {
   background: #1b2342;
   display: inline-block;
-  padding: 12px 18px;
+  padding: 0.75rem 1.125rem;
   border-radius: 10px;
   text-align: center;
 }
@@ -191,35 +235,36 @@ header .offcanvas .offcanvas-body ul a {
   font-size: 24px;
 }
 .about-section .img {
-  padding: 25px;
+  padding: 1.5625rem;
 }
 /*feature section css*/
 .feature-section {
-  padding: 60px 0;
+  padding: 3.75rem 0;
 }
 .feature-section .content {
   text-align: center;
 }
 .feature-section .content p {
-  padding: 15px 0;
+  padding: 1rem 0;
 }
 .feature-section .features {
-  padding: 50px 0;
+  padding: 3.125rem 0;
 }
 .feature-section .features .feature {
   text-align: center;
+  margin: 1.25rem;
 }
 .feature-section .features .feature i {
-  font-size: 24px;
+  font-size: 1.5rem;
   color: #fafafa;
   vertical-align: middle;
 }
 .feature-section .features .feature i::before {
-  padding: 15px;
+  padding: 0.9375rem;
   border-radius: 10px;
 }
 .feature-section .features .feature h3 {
-  padding: 15px 0;
+  padding: 0.9375rem 0;
 }
 .feature-section .features .feature .blue::before {
   background: #175cff;
@@ -231,7 +276,12 @@ header .offcanvas .offcanvas-body ul a {
   background: #f25767;
 }
 .feature-section .feature-blog {
-  margin-top: 60px;
+  margin-top: 3.75rem;
+}
+@media (max-width: 767px) {
+  .feature-section .feature-blog {
+    margin: 0;
+  }
 }
 .feature-section .feature-blog .bg-blue {
   background: #CEDDFF;
@@ -244,8 +294,13 @@ header .offcanvas .offcanvas-body ul a {
   padding: 20px 25px;
   border-radius: 15px;
 }
+@media (max-width: 424px) {
+  .feature-section .feature-blog .f-blog {
+    margin: 1rem;
+  }
+}
 .feature-section .feature-blog .f-blog .txt p {
-  padding: 20px 0;
+  padding: 1.25rem 0;
 }
 .feature-section .feature-blog .f-blog .txt .btn {
   border: 2px solid #175cff;
@@ -259,11 +314,11 @@ header .offcanvas .offcanvas-body ul a {
 }
 /*process section css*/
 .process-section {
-  padding: 60px 0;
+  padding: 3.75rem 0;
 }
 .process-section .content {
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 2.5rem;
 }
 .process-section .content h4 {
   color: #175cff;
@@ -272,54 +327,54 @@ header .offcanvas .offcanvas-body ul a {
   padding: 1rem 0;
 }
 .process-section .process-content li:not(:last-child) {
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 .process-section .process-content li .step .icon i {
-  font-size: 24px;
+  font-size: 1.5rem;
   color: #1b2342;
   vertical-align: middle;
 }
 @media (max-width: 991px) {
   .process-section .process-content li .step .icon i {
-    font-size: 18px;
+    font-size: 1.125rem;
   }
 }
 .process-section .process-content li .step .icon i::before {
-  padding: 15px;
+  padding: 0.9375rem;
   border: 1px solid #1b2342;
-  border-radius: 10px;
+  border-radius: 0.625rem;
 }
 @media (max-width: 991px) {
   .process-section .process-content li .step .icon i::before {
-    padding: 10px;
+    padding: 0.625rem;
   }
 }
 .process-section .process-content li .step .txt {
-  margin-left: 25px;
+  margin-left: 1.5625rem;
 }
 .process-section .process-content li .step .txt span {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
   color: #176EFF;
 }
 .process-section .process-content li .step .txt h3 {
-  padding: 10px 0;
+  padding: 0.625rem 0;
 }
 /*pricing-section css*/
 .pricing-section {
-  padding: 60px 0;
+  padding: 3.75rem 0;
 }
 .pricing-section .content {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 1.875rem;
 }
 .pricing-section .content span {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
   color: #176EFF;
 }
 .pricing-section .content h2 {
-  padding: 15px 0;
+  padding: 1rem 0;
 }
 .pricing-section .feature {
   text-align: center;
@@ -333,21 +388,21 @@ header .offcanvas .offcanvas-body ul a {
   text-align: center;
 }
 .pricing-section .feature .box i {
-  font-size: 22px;
+  font-size: 1.375rem;
   vertical-align: middle;
 }
 @media (max-width: 991px) {
   .pricing-section .feature .box i {
-    font-size: 16px;
+    font-size: 1rem;
   }
 }
 .pricing-section .feature .box i::before {
-  padding: 15px;
+  padding: 1rem;
   border-radius: 50%;
 }
 @media (max-width: 991px) {
   .pricing-section .feature .box i::before {
-    padding: 10px;
+    padding: 0.625rem;
   }
 }
 .pricing-section .feature .box .blue {
@@ -372,10 +427,10 @@ header .offcanvas .offcanvas-body ul a {
   font-weight: 600;
   color: #071c4d !important;
   display: inline-block;
-  margin-left: 10px;
+  margin-left: 0.625rem;
 }
 .pricing-section .prices {
-  margin-top: 30px;
+  margin-top: 1.875rem;
   position: relative;
 }
 @media (max-width: 991px) {
@@ -385,17 +440,17 @@ header .offcanvas .offcanvas-body ul a {
 }
 .pricing-section .prices .row .pricing-card {
   border: 1px solid #CEDDFF;
-  padding: 25px 40px;
+  padding: 1.5625rem 2.5rem;
   border-radius: 15px;
-  box-shadow: 0 5px 20px 0 #d2d2f580;
+  box-shadow: 0 5px 20px 0 #d2d2f53f;
 }
 .pricing-section .prices .row .pricing-card span {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 600;
   color: #176EFF;
 }
 .pricing-section .prices .row .pricing-card h2 {
-  padding: 20px 0;
+  padding: 1.25rem 0;
 }
 .pricing-section .prices .row .pricing-card h2 span {
   font-weight: 500;
@@ -404,16 +459,16 @@ header .offcanvas .offcanvas-body ul a {
   list-style: none;
 }
 .pricing-section .prices .row .pricing-card ul li:not(:last-child) {
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
 }
 .pricing-section .prices .row .pricing-card ul li i {
   color: #466EFF;
 }
 .pricing-section .prices .row .pricing-card ul li span {
-  margin-left: 8px;
+  margin-left: 0.5rem;
 }
 .pricing-section .prices .row .pricing-card .button {
-  margin-top: 25px;
+  margin-top: 1.5625rem;
   text-align: center;
 }
 .pricing-section .prices .row .pricing-card .button .btn {
@@ -429,119 +484,127 @@ header .offcanvas .offcanvas-body ul a {
 
 /*testimonial section css*/
 .testimonial-section {
-  padding: 60px 0;
+  padding: 3.75rem 0;
 }
 .testimonial-section .content {
   text-align: center;
 }
 .testimonial-section .content span {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 600;
   color: #176EFF;
 }
 .testimonial-section .content h2 {
-  padding: 15px 0;
+  padding: 1rem 0;
 }
 .testimonial-section .swiper {
-  padding: 40px 0;
+  padding: 2.5rem 0;
+}
+@media (max-width: 767px) {
+  .testimonial-section .swiper {
+    margin: 1.25rem;
+  }
 }
 .testimonial-section .swiper .swiper-slide {
   justify-content: center;
   align-items: center;
-  box-shadow: 0 5px 20px 0 #d2d2f580;
-  border-radius: 15px;
+  box-shadow: 0 5px 20px 0 #d2d2f53f;
+  border-radius: 0.9375rem;
 }
 .testimonial-section .swiper .swiper-slide .review {
   text-align: center;
-  padding: 20px;
+  padding: 1.25rem;
   background: #e0e0e0;
-  border-radius: 15px;
+  border-radius: 0.9375rem;
 }
 .testimonial-section .swiper .swiper-slide .review .client .img img {
-  width: 40%;
+  width: 30%;
 }
 .testimonial-section .swiper .swiper-slide .review .client .info h4 {
-  padding: 10px 0;
+  padding: 0.625rem 0;
 }
 /*team section css*/
 .team-section {
-  padding: 60px 0;
+  padding: 3.75rem 0;
 }
 .team-section .content {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 1.875rem;
 }
 .team-section .content span {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
   color: #176EFF;
 }
 .team-section .content h2 {
-  padding: 15px 0;
+  padding: 1rem 0;
 }
 .team-section .member {
   text-align: center;
   cursor: pointer;
-  position: relative;
-  overflow: hidden;
-}
-.team-section .member:hover img {
-  transform: scale(1.15);
-}
-.team-section .member:hover ul {
-  transform: translateX(-55px);
 }
 .team-section .member .img {
-  border-radius: 10px;
+  position: relative;
+  border-radius: 0.625rem;
   overflow: hidden;
-  box-shadow: 0 5px 20px 0 #d2d2f580;
+  box-shadow: 0 5px 20px 0 #d2d2f53f;
+}
+.team-section .member .img:hover img {
+  transform: scale(1.15);
+}
+.team-section .member .img:hover ul {
+  transform: translateY(-45px);
 }
 .team-section .member .img img {
   transition: all 1s ease-in-out;
 }
-.team-section .member h4 {
-  padding: 10px 0;
-}
-.team-section .member ul {
+.team-section .member .img ul {
   position: absolute;
-  top: 20%;
-  left: 100%;
+  top: 100%;
+  left: 20%;
+  transform: translateY(0);
   transition: all 1s ease-in-out;
-  transform: translateX(0);
 }
-.team-section .member ul li:not(:last-child) {
-  margin-bottom: 10px;
+.team-section .member .img ul li:not(:last-child) {
+  margin-right: 0.3125rem;
 }
-.team-section .member ul i {
-  font-size: 16px;
+.team-section .member .img ul i {
+  font-size: 1rem;
   color: #175cff;
 }
-.team-section .member ul i:hover {
+.team-section .member .img ul i:hover {
   color: #fafafa;
 }
-.team-section .member ul i:hover::before {
+.team-section .member .img ul i:hover::before {
   background: #175cff;
 }
-.team-section .member ul i::before {
-  padding: 10px;
-  border-radius: 8px;
+.team-section .member .img ul i::before {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
   background: #fafafa;
 }
-
+@media (max-width: 767px) {
+  .team-section .member .img ul i::before {
+    display: none;
+  }
+}
+.team-section .member h4 {
+  padding: 0.625rem 0;
+}
 /*footer css*/
 footer {
-  padding: 40px 0;
+  padding: 2.5rem 0;
   background: #1b2342;
 }
 @media (max-width: 767px) {
   footer .social-links {
     text-align: center;
-    padding-bottom: 15px;
+    padding-bottom: 1rem;
   }
 }
 footer .social-links p {
   color: #fafafa !important;
-  padding: 10px 0;
+  padding: 0.625rem 0;
 }
 @media (max-width: 767px) {
   footer .social-links .nav {
@@ -549,14 +612,14 @@ footer .social-links p {
   }
 }
 footer .social-links .nav li:not(:last-child) {
-  margin-right: 10px;
+  margin-right: 1rem;
 }
 footer .social-links .nav i {
   color: #fafafa;
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 footer .u-link li:not(:last-child), footer .service li:not(:last-child) {
-  margin-bottom: 5px;
+  margin-bottom: 0.3125rem;
 }
 footer .u-link a, footer .service a {
   color: #fafafa !important;
@@ -569,7 +632,7 @@ footer .u-link h4, footer .service h4 {
   color: #fafafa !important;
 }
 footer .copy-txt {
-  margin-top: 50px;
+  margin-top: 3.125rem;
   text-align: center;
 }
 footer .copy-txt p {
@@ -578,21 +641,30 @@ footer .copy-txt p {
 
 /*scroll to  top css*/
 .scrollToTopBtn {
-  background-color: #f25767;
+  background-color: #175cff;
   border-radius: 50%;
   border: none;
   color: #fafafa;
   cursor: pointer;
-  font-size: 18px;
   line-height: 48px;
   width: 48px;
+  height: 48px;
   position: fixed;
   bottom: 20px;
-  right: 20px;
+  right: 25px;
   z-index: 100;
   opacity: 0;
   transform: translateY(100px);
   transition: all 0.3s ease;
+  /*media query*/
+}
+@media (max-width: 424px) {
+  .scrollToTopBtn {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    transform: translateY(56px);
+  }
 }
 
 .showBtn {

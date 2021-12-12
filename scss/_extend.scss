@@ -65,18 +65,35 @@
   line-height: 1.6;
   //media query
   @media(max-width: $media-sm) {
-    font-size: 14px;
+    font-size: 0.875rem;
   }
 }
 %btn{
+  font-size: 1.125rem;
   font-weight: 500;
   background: $btn;
   color: $light !important;
-  padding: 10px 15px !important;
+  padding: 1rem !important;
   transition: all 0.3s ease-in-out;
   //media query
+  @media(max-width: $media-sm) {
+    font-size: 0.875rem;
+  }
 
   &:hover, &:active{
     background: $btn-d;
+  }
+}
+
+//utilities
+%margin{
+  margin: 0 200px;
+
+  //media query
+  @media(max-width: $media-md){ 
+    margin: 0 100px;
+  }
+  @media(max-width: $media-sm){ 
+    margin: 0;
   }
 }
