@@ -646,9 +646,9 @@ footer .copy-txt p {
   border: none;
   color: #fafafa;
   cursor: pointer;
-  line-height: 48px;
-  width: 48px;
-  height: 48px;
+  line-height: 36px;
+  width: 36px;
+  height: 36px;
   position: fixed;
   bottom: 20px;
   right: 25px;
@@ -656,15 +656,6 @@ footer .copy-txt p {
   opacity: 0;
   transform: translateY(100px);
   transition: all 0.3s ease;
-  /*media query*/
-}
-@media (max-width: 424px) {
-  .scrollToTopBtn {
-    width: 20px;
-    height: 20px;
-    line-height: 20px;
-    transform: translateY(56px);
-  }
 }
 
 .showBtn {
