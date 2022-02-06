@@ -4,15 +4,18 @@
 body{
   background: #eeecec;
   font-family: 'Manrope', 'Arial', sans-serif;
+  position: static;
 }
 *{
   margin: 0;
   padding: 0;
 }
-/*header css*/
+ /*header css*/
 .sticky{
-  background: rgb(238, 238, 238);
-  box-shadow: 0px 0px 7px 0.75px #959494;}
+   background: rgb(238, 238, 238);
+   box-shadow: 0px 0px 7px 0.75px #959494;
+}
+
 header{
   position: fixed;
   top: 0;
@@ -21,6 +24,7 @@ header{
   transition: 0.6s;
   z-index: 10000;
   .navbar{
+    padding: 1rem 0;
     position: relative;
     background: transparent;
     transition: 0.6s;
@@ -46,11 +50,9 @@ header{
       }
       .offcanvas-body{
         ul{
-          li{
-          }
+          li{}
           a{
-            @extend%p;
-            font-weight: 600;
+            @extend%a;
             &:hover{
               color: $btn !important;
             }
@@ -64,7 +66,7 @@ header{
 
 /*hero-section css*/
 .hero-section{
-  padding: 6.25rem 0;
+  padding: 10rem 0 4rem 0;
   .content{
     margin-right: 1.875rem;
     h1{
@@ -627,6 +629,10 @@ footer{
       i{
         color: $light;
         font-size: 1.125rem;
+        
+      &:hover{
+        opacity: 0.6;
+      }
       }
     }
   }
@@ -683,8 +689,3 @@ footer{
   opacity: 1;
   transform: translateY(0);
 }
-
-
-
-
-

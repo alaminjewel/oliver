@@ -1,6 +1,6 @@
 .hero-section .content h1 {
   margin: 0;
-  font-size: 60px;
+  font-size: 3.75rem;
   font-weight: 800;
   color: #071c4d;
 }
@@ -11,51 +11,51 @@
 }
 @media (max-width: 767px) {
   .hero-section .content h1 {
-    font-size: 36px;
+    font-size: 2.25rem;
   }
 }
 @media (max-width: 424px) {
   .hero-section .content h1 {
-    font-size: 30px;
+    font-size: 1.875rem;
   }
 }
 
 .about-section .content h2, .feature-section .content h2, .process-section .content h2, .pricing-section .content h2, .pricing-section .prices .row .pricing-card h2, .testimonial-section .content h2, .team-section .content h2 {
   margin: 0;
-  font-size: 36px;
+  font-size: 2.25rem;
   font-weight: 700;
   color: #071c4d;
 }
 @media (max-width: 991px) {
   .about-section .content h2, .feature-section .content h2, .process-section .content h2, .pricing-section .content h2, .pricing-section .prices .row .pricing-card h2, .testimonial-section .content h2, .team-section .content h2 {
-    font-size: 30px;
+    font-size: 1.875rem;
   }
 }
 @media (max-width: 767px) {
   .about-section .content h2, .feature-section .content h2, .process-section .content h2, .pricing-section .content h2, .pricing-section .prices .row .pricing-card h2, .testimonial-section .content h2, .team-section .content h2 {
-    font-size: 26px;
+    font-size: 1.625rem;
   }
 }
 @media (max-width: 424px) {
   .about-section .content h2, .feature-section .content h2, .process-section .content h2, .pricing-section .content h2, .pricing-section .prices .row .pricing-card h2, .testimonial-section .content h2, .team-section .content h2 {
-    font-size: 24px;
+    font-size: 1.5rem;
   }
 }
 
 .feature-section .features .feature h3, .feature-section .feature-blog .f-blog .txt h3, .process-section .process-content li .step .txt h3 {
   margin: 0;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 700;
   color: #071c4d;
 }
 @media (max-width: 991px) {
   .feature-section .features .feature h3, .feature-section .feature-blog .f-blog .txt h3, .process-section .process-content li .step .txt h3 {
-    font-size: 22px;
+    font-size: 1.375rem;
   }
 }
 @media (max-width: 424px) {
   .feature-section .features .feature h3, .feature-section .feature-blog .f-blog .txt h3, .process-section .process-content li .step .txt h3 {
-    font-size: 18px;
+    font-size: 1.125rem;
   }
 }
 
@@ -67,25 +67,36 @@
 }
 @media (max-width: 991px) {
   .process-section .content h4, .testimonial-section .swiper .swiper-slide .review .client .info h4, .team-section .member h4, footer .u-link h4, footer .service h4 {
-    font-size: 20px;
+    font-size: 1.25rem;
   }
 }
 @media (max-width: 424px) {
   .process-section .content h4, .testimonial-section .swiper .swiper-slide .review .client .info h4, .team-section .member h4, footer .u-link h4, footer .service h4 {
-    font-size: 18px;
+    font-size: 1.125rem;
   }
 }
 
-header .navbar .offcanvas .offcanvas-body ul a, .hero-section .content p, .about-section .content p, .feature-section .content p, .feature-section .features .feature p, .feature-section .feature-blog .f-blog .txt p, .process-section .content p, .process-section .process-content li .step .txt p, .pricing-section .content p, .pricing-section .feature .box h4, .pricing-section .prices .row .pricing-card h2 span, .pricing-section .prices .row .pricing-card ul li span, .testimonial-section .content p, .testimonial-section .swiper .swiper-slide .review .txt p, .testimonial-section .swiper .swiper-slide .review .client .info span, .team-section .content p, .team-section .member span, footer .social-links p, footer .u-link a, footer .service a, footer .copy-txt p {
+.hero-section .content p, .about-section .content p, .feature-section .content p, .feature-section .features .feature p, .feature-section .feature-blog .f-blog .txt p, .process-section .content p, .process-section .process-content li .step .txt p, .pricing-section .content p, .pricing-section .feature .box h4, .pricing-section .prices .row .pricing-card h2 span, .pricing-section .prices .row .pricing-card ul li span, .testimonial-section .content p, .testimonial-section .swiper .swiper-slide .review .txt p, .testimonial-section .swiper .swiper-slide .review .client .info span, .team-section .content p, .team-section .member span, footer .social-links p, footer .u-link a, footer .service a, footer .copy-txt p {
   margin: 0;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   color: #2e2e2e !important;
   line-height: 1.6;
 }
 @media (max-width: 767px) {
-  header .navbar .offcanvas .offcanvas-body ul a, .hero-section .content p, .about-section .content p, .feature-section .content p, .feature-section .features .feature p, .feature-section .feature-blog .f-blog .txt p, .process-section .content p, .process-section .process-content li .step .txt p, .pricing-section .content p, .pricing-section .feature .box h4, .pricing-section .prices .row .pricing-card h2 span, .pricing-section .prices .row .pricing-card ul li span, .testimonial-section .content p, .testimonial-section .swiper .swiper-slide .review .txt p, .testimonial-section .swiper .swiper-slide .review .client .info span, .team-section .content p, .team-section .member span, footer .social-links p, footer .u-link a, footer .service a, footer .copy-txt p {
+  .hero-section .content p, .about-section .content p, .feature-section .content p, .feature-section .features .feature p, .feature-section .feature-blog .f-blog .txt p, .process-section .content p, .process-section .process-content li .step .txt p, .pricing-section .content p, .pricing-section .feature .box h4, .pricing-section .prices .row .pricing-card h2 span, .pricing-section .prices .row .pricing-card ul li span, .testimonial-section .content p, .testimonial-section .swiper .swiper-slide .review .txt p, .testimonial-section .swiper .swiper-slide .review .client .info span, .team-section .content p, .team-section .member span, footer .social-links p, footer .u-link a, footer .service a, footer .copy-txt p {
     font-size: 0.875rem;
+  }
+}
+
+header .navbar .offcanvas .offcanvas-body ul a {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #2e2e2e !important;
+}
+@media (max-width: 767px) {
+  header .navbar .offcanvas .offcanvas-body ul a {
+    font-size: 1rem;
   }
 }
 
@@ -123,6 +134,7 @@ header .navbar .offcanvas .offcanvas-body ul a, .hero-section .content p, .about
 body {
   background: #eeecec;
   font-family: "Manrope", "Arial", sans-serif;
+  position: static;
 }
 
 * {
@@ -145,6 +157,7 @@ header {
   z-index: 10000;
 }
 header .navbar {
+  padding: 1rem 0;
   position: relative;
   background: transparent;
   transition: 0.6s;
@@ -160,16 +173,13 @@ header .navbar .navbar-toggler:focus {
 header .navbar .offcanvas .btn-close:focus {
   box-shadow: none;
 }
-header .navbar .offcanvas .offcanvas-body ul a {
-  font-weight: 600;
-}
 header .navbar .offcanvas .offcanvas-body ul a:hover {
   color: #175cff !important;
 }
 
 /*hero-section css*/
 .hero-section {
-  padding: 6.25rem 0;
+  padding: 10rem 0 4rem 0;
 }
 .hero-section .content {
   margin-right: 1.875rem;
@@ -617,6 +627,9 @@ footer .social-links .nav li:not(:last-child) {
 footer .social-links .nav i {
   color: #fafafa;
   font-size: 1.125rem;
+}
+footer .social-links .nav i:hover {
+  opacity: 0.6;
 }
 footer .u-link li:not(:last-child), footer .service li:not(:last-child) {
   margin-bottom: 0.3125rem;
